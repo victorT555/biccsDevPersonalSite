@@ -222,4 +222,5 @@ header {
 .nav-bar a:hover {
     background-color: #562586;
     color: #f2f2f2;
+    border-radius: 5px;
 }

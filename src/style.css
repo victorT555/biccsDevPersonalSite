@@ -1,31 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+/*
+1. Position
+2. Box model
+3. Typography
+4. Visuals
+5. Miscellaneus
+*/
 
-
-body {
-   /* background-image: url(/assets/nightCity.png); */
-   background-image: url(/assets/city.gif);
-   background-size: cover;
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-section {
-    display: flex;
-    margin: auto;
+html {
+    font-size: 62.5%;
+    font-family: "VT323", monospace;
+}
+
+body {
+    /* background-image: url(/assets/nightCity.png); */
+    background-image: url(/src/assets/city.gif);
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: auto;
+}
+
+main {
+    height: auto;
     width: 100%;
+    display: flex;
 }
 
 #socialMedia {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-width: 50px;
+    max-width: 100px;
 }
 
 #socialMedia a {
     margin-bottom: 20px;
+    align-self: flex-end;
 }
 
+
 /* Centers all components related to the console and its surroundings */
+
 .console {
+    height: 500px;
+    width: 70%;
+    min-width: 300px;
+    max-width: 900px;
+    justify-content: center;
     border-style: solid;
     border-color: white;
     background: rgba(0, 0, 0, 0.534);
@@ -33,18 +62,38 @@ section {
     font-size: 1.15em;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    overflow-x: hidden;
 }
 
 .console .console-display-flex {
     display: flex;
     padding: 0px 20px 0px 20px;
-    font-family: 'VT323', monospace;
+    font-family: "VT323", monospace;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.console .console-display-flex p {
+    width: auto;
+    font-size: 2.8rem;
+    line-height: 2.6rem;
+}
+
+.console .console-display-flex h2 {
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 2.6rem;
+}
+
+.console .console-display-flex h3 {
+    width: 100%;
+    font-size: 2.8rem;
+    line-height: 2.6rem;
 }
 
 .console .console-display-flex .console-component-text {
     margin-left: 5px;
     margin-right: 5px;
-
 }
 
 .console .console-component-bar {
@@ -55,17 +104,25 @@ section {
 
 .console .console-component-bar #console-component-window {
     background: #222823a6;
-    width: 170px;
-    height: 25px;
+    height: auto;
     border-radius: 20px;
     border-style: solid;
     border-color: white;
+    min-width: 150px;
+    border-radius: 20px 20px 0 0;
+}
+
+.console-button--container {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding-bottom: 7px;
 }
 
 .console .console-component-bar #console-component-button-1 {
     height: 20px;
     width: 20px;
-    margin-left: 360px;
+    margin-left: 60px;
     margin-top: 10px;
     margin-right: 10px;
     border-radius: 50%;
@@ -91,15 +148,15 @@ section {
 }
 
 .console .console-component-leftText {
-    color: #7AE582;
+    color: #7ae582;
 }
 
 .console .console-component-rightText {
-    color: #5D2E8C;
+    color: #5d2e8c;
 }
 
 .console .console-component-text {
-    color: #FFFAFF;
+    color: #fffaff;
 }
 
 footer {
@@ -112,27 +169,30 @@ footer {
 
 #nft-reference {
     margin: 0 auto;
-    width:fit-content;
+    width: fit-content;
     border-radius: 10px;
     background-color: #3c1073;
-    font-family: 'VT323', monospace;
+    font-family: "VT323", monospace;
     font-size: 1.6em;
 }
 
 #nft-reference a {
     padding-left: 1em;
-    padding-right: .4em;
+    padding-right: 0.4em;
     text-decoration: none;
-    color: #FFFAFF;
+    color: #fffaff;
 }
 
 header {
     padding-top: 10em;
     width: 100%;
     margin: auto;
+    min-width: 320px;
 }
 
+
 /* Add a purple background color to the top navigation */
+
 .nav-bar {
     margin: 0 auto;
     width: fit-content;
@@ -141,21 +201,25 @@ header {
     margin-bottom: 2em;
     display: flex;
     border-radius: 10px;
-    font-family: 'VT323', monospace;
+    font-family: "VT323", monospace;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .nav-bar a {
+}
+
+
+/* Style the links inside the navigation bar */
+
+.nav-bar a {
     float: left;
     color: #f2f2f2;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 1.6em;
-  }
-  
-  /* Change the color of links on hover */
-  .nav-bar a:hover {
+}
+
+
+/* Change the color of links on hover */
+
+.nav-bar a:hover {
     background-color: #562586;
     color: #f2f2f2;
-  }
+}

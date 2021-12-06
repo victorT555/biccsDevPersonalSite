@@ -8,15 +8,15 @@
 
 :root {
     /* Colors */
-    --bitcoin-orange: #F7931A;
-    --soft-orange: #FFE9D4;
-    --secondary-blue: #1A9AF7;
-    --soft-blue: #E7F5FF;
-    --warm-black: #201E1C;
+    --bitcoin-orange: #f7931a;
+    --soft-orange: #ffe9d4;
+    --secondary-blue: #1a9af7;
+    --soft-blue: #e7f5ff;
+    --warm-black: #201e1c;
     --black: #282623;
-    --grey: #BABABA;
-    --off-white: #FAF8F7;
-    --just-white: #FFFFFF;
+    --grey: #bababa;
+    --off-white: #faf8f7;
+    --just-white: #ffffff;
 }
 
 * {
@@ -27,19 +27,19 @@
 
 html {
     font-size: 62.5%;
-    font-family: 'DM Sans', sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 header {
-    position: relative; 
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     min-width: 320px;
     height: 334px;
-    text-align: center; 
-    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);;
+    text-align: center;
+    background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
 }
 
 header img {
@@ -82,7 +82,7 @@ header img {
     margin-top: 35px;
     padding: 15px;
     width: 229px;
-    height: 48px;   
+    height: 48px;
     background-color: var(--off-white);
     /* Shadow */
     box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
@@ -99,7 +99,7 @@ header img {
     width: 13px;
     height: 8px;
     margin-left: 10px;
-    background-image: url('/batabit/assets/icons/down-arrow.svg');
+    background-image: url("/batabit/assets/icons/down-arrow.svg");
 }
 
 main {
@@ -128,7 +128,7 @@ main {
     height: 200px;
     margin: 0 auto;
     margin-bottom: 50px;
-    background-image: url('/batabit/assets/img/Bitcoin.svg');
+    background-image: url("/batabit/assets/img/Bitcoin.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -142,7 +142,7 @@ main {
     color: var(--black);
 }
 
-.main-exchange-container p{
+.main-exchange-container p {
     margin-bottom: 30px;
     font-size: 1.4rem;
     font-weight: 500;
@@ -165,8 +165,8 @@ main {
 }
 
 .main-currency-table,
- .main-comission-table,
- .main-table-decorator--container {
+.main-comission-table,
+.main-table-decorator--container {
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -181,8 +181,8 @@ main {
     max-width: 500px;
     height: 200px;
     margin: 0 auto;
-    font-family: 'DM Sans', sans-serif;
-    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);;
+    font-family: "DM Sans", sans-serif;
+    background: linear-gradient(207.8deg, #201e1c 16.69%, #f7931a 100%);
     border-radius: 15px;
 }
 
@@ -195,7 +195,6 @@ main {
     margin-top: 32%;
 }
 
-
 .main-currency-table .currency-table--title {
     margin-bottom: 15px;
     font-size: 1.8em;
@@ -204,7 +203,6 @@ main {
     color: var(--bitcoin-orange);
     padding-left: 18px;
     text-align: center;
-
 }
 
 .main-comission-table .comission-table--title {
@@ -215,11 +213,10 @@ main {
     color: var(--secondary-blue);
     padding-left: 18px;
     text-align: center;
-
 }
 
 .currency-table--container,
- .comission-table--container {
+.comission-table--container {
     width: 90%;
     min-width: 230px;
     max-width: 300px;
@@ -228,7 +225,7 @@ main {
 }
 
 .currency-table--container table,
- .comission-table--container table {
+.comission-table--container table {
     width: 100%;
     height: 100%;
 }
@@ -245,7 +242,7 @@ main {
 
 .currency-table--container .table__top-left,
 .comission-table--container .table__top-left {
-    border-radius: 15px 0 0 0;  
+    border-radius: 15px 0 0 0;
 }
 
 .currency-table--container .table__top-right,
@@ -264,7 +261,7 @@ main {
 }
 
 .currency-table--container .table__right,
-.comission-table--container .table__right{
+.comission-table--container .table__right {
     font-size: 1.4rem;
     font-weight: normal;
     line-height: 1.7rem;
@@ -277,7 +274,7 @@ main {
     width: 15px;
     height: 15px;
     margin-left: 10px;
-    background-image: url('/batabit/assets/icons/trending-down.svg');
+    background-image: url("/batabit/assets/icons/trending-down.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -289,7 +286,7 @@ main {
     width: 15px;
     height: 15px;
     margin-left: 10px;
-    background-image: url('/batabit/assets/icons/trending-up.svg');
+    background-image: url("/batabit/assets/icons/trending-up.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -342,7 +339,7 @@ main {
     height: 25px;
     top: -10px;
     left: calc(50% - 20px);
-    background-image: url('/batabit/assets/icons/batata.svg');
+    background-image: url("/batabit/assets/icons/batata.svg");
 }
 
 .product-detail--title {
@@ -354,7 +351,7 @@ main {
     text-align: center;
 }
 
-.product-detail--title h2{
+.product-detail--title h2 {
     margin-bottom: 20px;
     font-size: 2.4rem;
     font-weight: bold;
@@ -387,7 +384,7 @@ main {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url('/batabit/assets/icons/clock.svg');
+    background-image: url("/batabit/assets/icons/clock.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -398,7 +395,7 @@ main {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url('/batabit/assets/icons/eye.svg');
+    background-image: url("/batabit/assets/icons/eye.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -409,7 +406,7 @@ main {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url('/batabit/assets/icons/dollar-sign.svg');
+    background-image: url("/batabit/assets/icons/dollar-sign.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -420,7 +417,7 @@ main {
     width: 20px;
     height: 20px;
     margin-bottom: 10px;
-    background-image: url('/batabit/assets/icons/check-circle.svg');
+    background-image: url("/batabit/assets/icons/check-circle.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -445,7 +442,7 @@ main {
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url('/batabit/assets/img/bitcoinbaby2x.jpg');
+    background-image: url("/batabit/assets/img/bitcoinbaby2x.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -527,27 +524,30 @@ main {
         transform: translateX(70%) scale(0.5);
         opacity: 0;
         visibility: hidden;
-      }
-      3%, 33.3333333333% {
+    }
+    3%,
+    33.3333333333% {
         transform: translateX(70%) scale(0.7);
         opacity: 0.4;
         visibility: visible;
-      }
-      36.3333333333%, 66.6666666667% {
+    }
+    36.3333333333%,
+    66.6666666667% {
         transform: translateX(0) scale(1);
         opacity: 1;
         visibility: visible;
-      }
-      69.6666666667%, 100% {
+    }
+    69.6666666667%,
+    100% {
         transform: translateX(-70%) scale(0.7);
         opacity: 0.4;
         visibility: visible;
-      }
-      103% {
+    }
+    103% {
         transform: translateX(-70%) scale(0.5);
         opacity: 0;
         visibility: visible;
-      }
+    }
 }
 
 .carousel__item {
@@ -576,27 +576,30 @@ main {
         transform: translateX(70%) scale(0.5);
         opacity: 0;
         visibility: hidden;
-      }
-      3%, 33.3333333333% {
+    }
+    3%,
+    33.3333333333% {
         transform: translateX(70%) scale(0.7);
         opacity: 0.4;
         visibility: visible;
-      }
-      36.3333333333%, 66.6666666667% {
+    }
+    36.3333333333%,
+    66.6666666667% {
         transform: translateX(0) scale(1);
         opacity: 1;
         visibility: visible;
-      }
-      69.6666666667%, 100% {
+    }
+    69.6666666667%,
+    100% {
         transform: translateX(-70%) scale(0.7);
         opacity: 0.4;
         visibility: visible;
-      }
-      103% {
+    }
+    103% {
         transform: translateX(-70%) scale(0.5);
         opacity: 0;
         visibility: visible;
-      }
+    }
 }
 
 .plans-container--card {
@@ -610,7 +613,7 @@ main {
     margin-bottom: 10px;
     padding: 0 15px;
     background-color: var(--just-white);
-    border-radius: 15px;    
+    border-radius: 15px;
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
 }
 
@@ -692,19 +695,18 @@ footer section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%; 
-
+    width: 50%;
 }
 
 footer .left ul {
-font-size: 1.4rem;
-font-weight: 500;
-line-height: 1.8rem;
-list-style: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
 }
 
 .left li {
-    margin: 10px 0; 
+    margin: 10px 0;
 }
 
 .left a {
@@ -712,7 +714,7 @@ list-style: none;
     color: var(--just-white);
 }
 
-.slider-container{
+.slider-container {
     width: 100%;
     position: relative;
 }

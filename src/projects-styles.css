@@ -236,12 +236,25 @@ header {
     margin: 10px;
     flex-direction: column;
     flex-wrap: wrap;
+    margin: 10px 40px;
 }
 
 .main-project-card img {
-    background-color: rgba(255, 255, 255, 0.753);
     border-radius: 5px;
     padding-top: 5px;
+    height: 100px;
+}
+
+.main-project-card #image-2 {
+    border-radius: 5px;
+    padding-top: 5px;
+    height: 100px;
+    padding: 0 34%;
+    margin: 15px 10%;
+}
+
+.main-project-card .project-card-image--container {
+    width: 90%;
 }
 
 .main-project-card .project-card-text--container {

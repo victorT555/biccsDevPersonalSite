@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>biccsDev</title>
-    <link rel="stylesheet" type="text/css" href="/src/projects-styles.css">
+    <title>biccsDev - snakeGame</title>
+    <link rel="stylesheet" type="text/css" href="/snake/snake-style.css">
 </head>
 
 <body>
@@ -31,52 +31,34 @@
         </div>
         <div class="console">
             <div class="console-component-bar">
-                <div id="console-component-window">Home</div>
+                <div id="console-component-window">Snake Game</div>
                 <div class="console-button--container">
                     <div id="console-component-button-1"></div>
                     <div id="console-component-button-2"></div>
                     <div id="console-component-button-3"> </div>
                 </div>
             </div>
-            <div class="console-display-flex">
-                <p class="console-component-leftText">user@userPC</p>
-                <p class="console-component-text">:</p>
-                <p class="console-component-rightText">~/$</p>
-                <h2 class="console-component-text">Hi, i'm Victor,</h2>
-            </div>
 
-            <div class="console-display-flex">
-                <p class="console-component-leftText">user@userPC</p>
-                <p class="console-component-text">:</p>
-                <p class="console-component-rightText">~/$</p>
-                <h3 class="console-component-text">i go by biccs on the web</h3>
-            </div>
-
-            <div class="console-display-flex">
-                <p class="console-component-leftText">user@userPC</p>
-                <p class="console-component-text">:</p>
-                <p class="console-component-rightText">~/$</p>
-                <h3 class="console-component-text">i'm a software engineer</h3>
-            </div>
-
-            <div class="console-display-flex">
-                <p class="console-component-leftText">user@userPC</p>
-                <p class="console-component-text">:</p>
-                <p class="console-component-rightText">~/$</p>
-                <h3 class="console-component-text">on this site, you can check out my lastest proyects
-                    <br> and some useful information about tech<br> in general
-                </h3>
+            <div class="snake--container">
+                <div class="snake--container-items">
+                    <p id="p1">SCORE:</p>
+                    <p id="p2">HIGHSCORE:</p>
+                    <p id="score">0</p>
+                    <p id="high">0</p>
+                    <canvas width="300" height="400" id="game"></canvas>
+                </div>
             </div>
         </div>
     </main>
     <footer>
         <div id="nft-reference">
-            <a href="https://cnft.io/token/61b15949d697f4280c3d57a3" target="_blank">
+            <a href="https://cnft.io/token/61a5d94101f8c79ea473ac3b" target="_blank">
                 Click to check out my latest NFT on sale!
             </a>
         </div>
         <img src="/src/assets/nftCoin.png" width="150px" height="150px" style="margin: 0 auto;">
     </footer>
+    <script src="/snake/snake-script.js"></script>
 </body>
 
 </html>

@@ -65,6 +65,15 @@ main {
     overflow-x: hidden;
 }
 
+.console #console-component-window {
+    text-align: center;
+    margin-top: 10px;
+    color: #fffaff;
+    font-family: "VT323", monospace;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
 .console .console-display-flex {
     display: flex;
     padding: 0px 20px 0px 20px;

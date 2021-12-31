@@ -6,9 +6,6 @@
 5. Miscellaneus
 */
 
-
-/*hola*/
-
 @import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
 * {
@@ -16,6 +13,56 @@
     margin: 0;
     padding: 0;
 }
+
+canvas {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.snake--container {
+    display: flex;
+    justify-content: center;
+}
+
+.snake--container-items {
+    position: relative;
+}
+
+#p1 {
+    color: #7ae582;
+    position: absolute;
+    left: 10px;
+    top: 20px;
+}
+
+#p2 {
+    color: #7ae582;
+    position: absolute;
+    left: 10px;
+    top: 50px;
+}
+
+#score {
+    color: #5d2e8c;
+    position: absolute;
+    left: 45px;
+    top: 20px;
+}
+
+#high {
+    color: #5d2e8c;
+    position: absolute;
+    left: 65px;
+    top: 50px;
+}
+
+
+/* canvas {
+    border: 1px solid white;
+} */
 
 html {
     font-size: 62.5%;
@@ -53,7 +100,7 @@ main {
 /* Centers all components related to the console and its surroundings */
 
 .console {
-    height: 500px;
+    height: inherit;
     width: 70%;
     min-width: 300px;
     max-width: 900px;
@@ -235,73 +282,4 @@ header {
     background-color: #562586;
     color: #f2f2f2;
     border-radius: 5px;
-}
-
-.main-project-card {
-    height: auto;
-    display: flex;
-    border-style: solid;
-    border-color: white;
-    border-width: 1px;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    flex-direction: column;
-    flex-wrap: wrap;
-    margin: 10px 40px;
-}
-
-.main-project-card img {
-    border-radius: 5px;
-    padding-top: 5px;
-    height: 100px;
-}
-
-.main-project-card #image-2 {
-    border-radius: 5px;
-    padding-top: 5px;
-    height: 100px;
-    padding: 0 34%;
-    margin: 15px 10%;
-}
-
-.main-project-card .project-card-image--container {
-    width: 90%;
-}
-
-.main-project-card .project-card-text--container {
-    font-size: 2.8rem;
-    line-height: 2.6rem;
-    color: white;
-    font-size: calc(12px + 1.5vw);
-    margin: 8px;
-    text-align: center;
-}
-
-.project-card-text--container p {
-    padding: 6px;
-}
-
-.project-card-buttons--container {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.project-card-buttons--container a {
-    text-decoration: none;
-    text-align: center;
-    min-width: 70px;
-    max-width: 360px;
-    height: 30px;
-    font-family: 'VT323', sans-serif;
-    font-weight: bold;
-    font-size: 1.4rem;
-    line-height: 1.6rem;
-    background-color: #3c1073;
-    color: white;
-    border-radius: 5px;
-    color: #e0dfdc;
-    letter-spacing: .1em;
-    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
 }

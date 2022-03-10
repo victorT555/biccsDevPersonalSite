@@ -2,6 +2,7 @@ import Grid from "./Grid.js"
 import Tile from "./Tile.js"
 
 const gameBoard = document.getElementById("game-board")
+var totalPoints = 0;
 
 const grid = new Grid(gameBoard)
 grid.randomEmptyCell().tile = new Tile(gameBoard)
@@ -54,14 +55,20 @@ async function handleInput(e) {
 
   if (!canMoveUp() && !canMoveDown() && !canMoveLeft() && !canMoveRight()) {
     newTile.waitForTransition(true).then(() => {
-      alert("You lose");
-      // Swal.fire({
-      //   icon: 'error',
-      //   title: 'Oops...',
-      //   text: 'Something went wrong!',
-      //   footer: '<a href="">Why do I have this issue?</a>'
-      // })
-    });
+      // alert("You lose");
+      Swal.fire({
+        icon: 'error',
+        title: 'Game Over',
+        text: 'Nice try!, how about another game?',
+        showDenyButton: true,
+        confirmButtonText: 'Again',
+        footer: `Total Points: ${totalPoints}`
+      }).then((result) => {
+        if (result.isConfirmed) {
+          location.reload(true)
+        }
+      })
+    })
     return
   }
 
@@ -135,6 +142,7 @@ function canMove(cells) {
       if (index === 0) return false
       if (cell.tile == null) return false
       const moveToCell = group[index - 1]
+      totalPoints++
       return moveToCell.canAccept(cell.tile)
     })
   })

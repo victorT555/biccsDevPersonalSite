@@ -24,7 +24,7 @@ html {
 
 body {
     /* background-image: url(/assets/nightCity.png); */
-    background-image: url(/src/assets/city.gif);
+    background-image: url(assets/city.gif);
     background-size: cover;
     /* background-repeat: no-repeat; */
     height: auto;

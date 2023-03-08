@@ -6,7 +6,7 @@ body {
     background: -webkit-linear-gradient(top, #ffffff 0%, #C9C9C9 100%);
     background: linear-gradient(to bottom, #ffffff 0%, #C9C9C9 100%);
     font-family: "Open Sans", sans-serif;
-    background-image: url(../src/assets/city.gif);
+    background-image: url(../../src/assets/city.gif);
     background-size: cover;
 }
 
